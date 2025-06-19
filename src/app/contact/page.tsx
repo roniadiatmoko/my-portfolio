@@ -7,7 +7,7 @@ export default function ContactPage(){
                     <label className="block text-sm font-medium">Nama</label>
                     <input
                         type="text"
-                        className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1 dark:bg-gray-900 dark:text-white"
                         placeholder="Nama Lengkap"
                         required
                     />
@@ -16,7 +16,7 @@ export default function ContactPage(){
                     <label className="block text-sm font-medium">Email</label>
                     <input 
                         type="email"
-                        className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1 dark:bg-gray-900 dark:text-white"
                         placeholder="email@contoh.com"
                         required
                     />
@@ -24,7 +24,7 @@ export default function ContactPage(){
                 <div>
                     <label className="block text-sm font-medium">Pesan</label>
                     <textarea
-                        className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1 dark:bg-gray-900 dark:text-white"
                         placeholder="Tulis pesan Anda..."
                         rows={4}
                         required
@@ -32,10 +32,11 @@ export default function ContactPage(){
                 </div>
                 <button
                     type="submit"
-                    className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/80 transition"
+                    className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
                 >
-                    Kirim
+                Kirim
                 </button>
+
             </form>
         </div>
     )
