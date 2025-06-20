@@ -12,7 +12,7 @@ export default function Hero(){
                     </h1>
                     <p className="text-lg text-zinc-900 dark:text-zinc-400">
                         <span className="font-bold text-purple-400">Developers</span><br/>
-                        I'm a passionate developer who loves crafting clean and efficient code. Welcome to my page!
+                        I am a passionate developer who loves crafting clean and efficient code. Welcome to my page!
                     </p>
                     <div className="flex">
                         <Link href="/projects" className="px-6 py-2 bg-purple-400 rounded-full font-medium">
