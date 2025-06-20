@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero(){
@@ -24,9 +25,9 @@ export default function Hero(){
                 </div>
                 
                 <div className="flex justify-center md:justify-end">
-                    <img 
+                    <Image  
                         src="/photos.jpg"
-                        alt="This is me"
+                        alt="This is Me"
                         className="w-64 h-64 md:w-80 mhd:h-80 object-cover rounded-full shadow-lg border-4 border-green-400 dark:border-green-300 transition-all"
                     />
                 </div>
