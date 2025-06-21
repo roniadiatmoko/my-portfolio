@@ -10,7 +10,22 @@ export default function Navbar() {
 
     return (
         <nav className="bg-white dark:bg-zinc-900 fixed w-full z-20 top-0 start-0">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            {/* Background grid untuk Light Mode */}
+            <div
+                className="absolute inset-0 z-0 opacity-10 dark:hidden"
+                style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='39' fill='none' stroke='%237C3AED' stroke-dasharray='4 4'/%3E%3C/svg%3E")`,
+                }}
+            />
+
+            {/* Background grid untuk Dark Mode */}
+            <div
+                className="absolute inset-0 z-0 opacity-10 hidden dark:block"
+                style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='39' fill='none' stroke='%23C084FC' stroke-dasharray='4 4'/%3E%3C/svg%3E")`,
+                }}
+            />
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative z-10">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                         Portfolio
@@ -51,7 +66,7 @@ export default function Navbar() {
                         }`}
                     id="navbar-sticky"
                 >
-                    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-zinc-900 md:dark:bg-zinc-900">
+                    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                         <li>
                             <Link
                                 href="/"
