@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-white dark:bg-zinc-900 dark:text-white px-6 py-32">
+        <main className="relative z-10 min-h-screen dark:text-white px-6 py-32">
             <div className="max-w-3xl mx-auto">
                 <h1 className="text-4xl font-bold mb-6">About Me</h1>
                 <p className="mb-4 text-lg leading-relaxed">

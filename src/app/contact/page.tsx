@@ -1,6 +1,6 @@
 export default function ContactPage(){
     return (
-        <div className="max-w-xl mx-auto px-4 py-32">
+        <div className="max-w-xl mx-auto px-4 py-32 relative z-10 ">
             <h1 className="text-3xl font-bold mb-8">📬 Hubungi Saya</h1>
             <form className="space-y-6">
                 <div>
